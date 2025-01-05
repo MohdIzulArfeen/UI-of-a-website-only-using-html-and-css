@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OXIDE GYMs</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            font-family: 'baloo Bhai',cursive;
+            color:white;
+            margin: 0%;
+            padding: 0%;
+            background:url('g1.png');
+        }
+        .left{
+           /* border: solid rgb(239, 10, 10);*/
+            display: inline-block;
+            position: absolute;
+            left: 20px;
+            top: 23px;
+            align-items: center;
+        }
+        .mid{font-size: 30px;
+            font-weight: 200;
+            font-style: bold;
+           /* border: solid rgb(216, 145, 21);*/
+            display: block;
+            margin: 23px auto;
+            width: 43%;
+        }
+        .right{
+            /*border: solid rgb(122, 123, 146);*/
+            display: inline-block;
+            position: absolute;
+            right: 20px;
+            top: 43px;
+
+        }
+        .nav{
+            display: inline-block;
+        }
+        .nav li{
+            font-size: 20px;
+            display: inline-block;
+        }
+        .nav li a {
+            color:aliceblue;
+            text-decoration: none;
+            padding: 23px;
+            font-size: 18px;
+        }
+
+        .nav li a:hover , .nav li a.active{
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .left img{
+        width: 90px;
+        height: 60px;
+        
+        }
+
+        .left div{
+            text-align: center;
+        }
+
+        .search{
+            font-size: 20px;
+            border-radius: 20px;
+        padding: 13px 20px ;
+        }
+       
+        .nav input{
+        margin-top: auto;
+    padding: 3px;
+    border-radius: 18px;
+    border: solid cornflowerblue;
+    }
+
+    .container{
+        border: solid rgb(243, 246, 240) 2px;
+        margin: 106px 80px;
+        padding:75px ;
+        width: 33%;
+        border-radius: 18px;
+    }
+
+    .btn{
+        background-color: black;
+        color: azure;
+        border-radius:6px ;
+        border: solid white 1px;
+    }
+
+    .right input{
+        display: block;
+        font-size: 14px ;
+        border: solid white 1px;
+        border-radius: 16px;
+        text-align: center;
+        font-style: italic;
+    }
+
+    .formgroup input{
+        text-align: center;
+        display: block;
+        width: 508;
+        border: solid black 1px;
+        border-radius: 6px;
+        font-size: 18px;
+        padding: 1px;
+        margin: 3px auto;
+    }
+    .container h2{
+        text-align: center;
+    }
+    .container button:hover{
+        color: aqua;
+    }
+    .container button{
+        display: block;
+        width: 150px;
+        margin: auto;
+        font-size: 16px;
+    }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!--for logo-->
+        <div class="left">
+          <img src="gymlogo.jpg" alt="">
+          <div>OXIDE GYM</div>
+        </div>
+        <!--for navigation-->
+        <div class="mid">
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Home</a> </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact us</a></li>                   
+                </ul>
+                        </nav>
+        </div>
+        <!--for search-->
+        <div class="right">
+            <div class="search">
+                <input type="text" name="search" id="search" placeholder="SEARCH">
+            </div>
+           
+        </div>
+    </header>
+    <div class="container">
+       <H2> JOIN THE BEST GYM NOW</H2>
+       <form action="noaction.php">
+        <div class="formgroup">
+            <input type="text" name="" placeholder="ENTER YOUR NAME">
+        </div>
+        <div class="formgroup">
+            <input type="text" name="" placeholder="ENTER YOUR AGE">
+        </div>
+        <div class="formgroup">
+            <input type="text" name="" placeholder="ENTER YOUR GENDER">
+        </div>
+        <div class="formgroup">
+            <input type="text" name="" placeholder="ENTER YOUR ADDRESS">
+        </div><br>
+        <button class="btn">SUBMIT</button>
+       </form>
+    </div>
+</body>
+</html>
